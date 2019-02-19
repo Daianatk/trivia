@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Trivia de Perros y Gatos</title>
+  </head>
+  <body>
+    <div id="box" class="hidden">
+		<div id="question-one" class="box-border">
+			<h3> 1. Guauuuuu</h3>
+			<p>¿Cual es el sabor que el perro rechaza?</p>
+			<p>a)Dulce</p>
+			<p>b)Salado</p>
+			<p>c)Amargo</p>
+			<p id="result1" class="results"></p>
+			<input type="text" id="ans11">
+			<button id="valid11" type="button" onclick="ans11()">Validar</button>
+		</div>
+		<div id="question-two" class="box-border">
+			<h3> 2. Guauuuuu Guauuuuu</h3>
+				<p>¿De que color de la lengua del chow chow?</p>
+				<p>a)Rojo</p>
+				<p>b)Azul</p>
+				<p>c)Verde</p>
+				<p id="result2" class="results"></p>
+				<input type="text" id="ans12">
+				<button id="valid12" type="button" onclick="ans12()">Validar</button>
+		</div>
+	  <div id="question-three" class="box-border">
+			<h3> 3. Guauuuuu Guauuuuu Guauuuuu</h3>
+			<p>¿Cual es la edad del perro mas longevo?</p>
+			<p>a)5 años y 10 meses</p>
+			<p>b)8 años y 7 meses</p>
+			<p>c)29 años y 5 meses</p>
+			<p id="result3" class="results"></p>
+			<input type="text" id="ans13">
+			<button id="valid13" type="button" onclick="ans13()">Validar</button>
+		</div>
+	  <div id="results-box" class="hidden">
+		    <h3>Resultados</h3>
+		    <p class="finalResults" id="right-answers">Respuestas correctas: </p>
+		    <p class="finalResults" id="wrong-answers">Respuestas incorrectas: </p>
+	  </div>
+    <div id="start" class="hidden">
+      <p>Iniciar Juego Nuevamente, elige una opción</p>
+      <button type="button"> <a href="gatos.html">Preguntas Sobre Gatos</button>
+      <button type="button"> <a href="perros.html">Preguntas Sobre Perros</button>
+      <h2 id="no-game"></h2>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

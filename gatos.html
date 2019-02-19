@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Trivia de Perros y Gatos</title>
+  </head>
+  <body>
+    <div id="box" class="hidden">
+		<div id="question-one" class="box-border">
+			<h3> 1. Miauuuuu</h3>
+			<p>¿Porque maullan los gatos?</p>
+			<p>a)Para saludar</p>
+			<p>b)Para comunicarse con las personas</p>
+			<p>c)Para conversar</p>
+			<p id="result1" class="results"></p>
+			<input type="text" id="ans21">
+			<button id="valid21" type="button" onclick="ans21()">Validar</button>
+		</div>
+		<div id="question-two" class="box-border">
+			<h3> 2. Miauuuuu Miauuuuu</h3>
+				<p>¿Cuantos bigotes tienen los Gatos?</p>
+				<p>a)24 bigotes a cada lado</p>
+				<p>b)12 bigotes a cada lado</p>
+				<p>c)10 bigotes a cada lado</p>
+				<p id="result2" class="results"></p>
+				<input type="text" id="ans22">
+				<button id="valid22" type="button" onclick="ans22()">Validar</button>
+		</div>
+	  <div id="question-three" class="box-border">
+			<h3> 3. Miauuuuuu Miauuuuu Miauuuuu</h3>
+			<p>¿Cuántas crias logro la gata que tuvo más crias durante su vida?</p>
+			<p>a)520 gatitos</p>
+			<p>b)172 gatitos</p>
+			<p>c)420 gatitos</p>
+			<p id="result3" class="results"></p>
+			<input type="text" id="ans23">
+			<button id="valid23" type="button" onclick="ans23()">Validar</button>
+		</div>
+	  <div id="results-box" class="hidden">
+		   <h3>Resultados</h3>
+		   <p class="finalResults" id="right-answers">Respuestas correctas: </p>
+		   <p class="finalResults" id="wrong-answers">Respuestas incorrectas: </p>
+	   </div>
+     <div id="start" class="hidden">
+       <p>Iniciar Juego Nuevamente, elige una opción</p>
+       <button type="button"> <a href="gatos.html">Preguntas Sobre Gatos</button>
+       <button type="button"> <a href="perros.html">Preguntas Sobre Perros</button>
+       <h2 id="no-game"></h2>
+     </div>
+
+    <script src="appg.js"></script>
+  </body>
+</html>
